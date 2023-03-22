@@ -1,7 +1,8 @@
 
-
+// Space = O(n)
+// time -> O(nlogn) // greedy algortihm
     import java.io.*;
-    import java.lang.*;
+    // import java.lang.*;
     import java.util.*;
     
     class Item {
