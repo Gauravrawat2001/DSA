@@ -53,7 +53,7 @@ class CricketerNameComparator implements Comparator<Cricketer> {
     }
 }
 
-public class Main {
+class DesignMAin {
     public static void main(String[] args) {
         // PriorityQueue<Integer> pq = new PriorityQueue<>();
         // // Min Heap
