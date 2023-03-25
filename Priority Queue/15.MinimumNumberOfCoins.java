@@ -5,6 +5,10 @@ import java.io.*;
 import java.util.*;
 
 class GFG{
+    /**
+     * @param args
+     * @throws IOException
+     */
     public static void main(String args[])throws IOException
     {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -28,7 +32,7 @@ class GFG{
 // User function Template for Java
 // Time -> (type of coins + amount) 
 class Solution{
-    static List<Integer> minPartition(int amount)
+    List<Integer> minPartition(int amount)
     {
         // code here
         List<Integer> change = new ArrayList<>();

@@ -143,6 +143,9 @@ class PriorityQueue<T> {
     public int size() {
         return data.size();
     }
+
+    public void poll() {
+    }
 }
 
 class Main {
