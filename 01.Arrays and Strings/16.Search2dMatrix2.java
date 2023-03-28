@@ -23,3 +23,5 @@ class Solution {
         return false;
     }
 }
+
+// Leetcode -> approach 2 - start from top right corner if(target > mat[i][j]) move down , if (target < mat[i][j]) move left
