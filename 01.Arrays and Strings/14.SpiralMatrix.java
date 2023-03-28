@@ -7,7 +7,7 @@ class Solution {
 
         List<Integer> res = new ArrayList<Integer>();
     
-        while(fr <= lr && fc <= lc){
+        while(res.size() < matrix.length * matrix[0].length){
 
             // for first row 
             for(int i = fc ; i <= lc; i++){
