@@ -30,5 +30,17 @@ import java.util.HashMap;
         // to get UserDefined Value
         System.out.println(ipl.getOrDefault("MI", 0));
         System.out.println(ipl.getOrDefault("DC", 0));
+
+           
+        // Iteration using key type // on HashMap
+        for(String key : ipl.keySet()){
+            System.out.println(key + " : " + ipl.get(key));
+        }
+        
+        // Deletion 
+        ipl.remove("KKR");
+        System.out.println(ipl);
+        ipl.remove("LSG"); // this will be ignored
+        System.out.println(ipl);  
     }
 }
