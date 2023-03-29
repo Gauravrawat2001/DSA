@@ -24,4 +24,24 @@ class Solution {
     }
 }
 
-// Leetcode -> approach 2 - start from top right corner if(target > mat[i][j]) move down , if (target < mat[i][j]) move left
+// Leetcode -> approach 2 - start from top right corner if(target > mat[i][j]) move down , if (target < mat[i][j]) move left or Stair case Search
+
+
+class Solution2 {
+    public boolean searchMatrix(int[][] matrix, int target) {
+     // StairCase Search 
+     // Time -> O(N + M)
+     int i = 0, j = matrix[0].length - 1;
+
+     
+
+     while(i < matrix.length && j >= 0){
+         if(matrix[i][j] == target) return true;
+         else if(target < matrix[i][j]) j--;
+         else i++;
+     }
+
+     return false;
+
+    }
+}
