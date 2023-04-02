@@ -37,7 +37,7 @@ class Solution2 {
         int high = matrix.length * matrix[0].length - 1;
 
         while(low <= high){
-            int mid = low +(high - low) / 2;
+            int mid = low + (high - low) / 2;
 
             int ridx = mid / matrix[0].length ;
             int cidx = mid % matrix[0].length;
