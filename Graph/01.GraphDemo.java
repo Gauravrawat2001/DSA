@@ -10,7 +10,7 @@ class Graph{
     
     Graph(int n){
         this.n = n;
-        adj = new ArrayList[n];
+        // adj = new ArrayList[n];
         for(int i = 0; i < n; i++){
             adj[i] = new ArrayList<>();
         }
