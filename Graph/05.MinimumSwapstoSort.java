@@ -20,7 +20,7 @@ class Graph{
     // unweighted , directed
     public void addEdge(int src, int dest){
         adj[src].add(dest);
-        adj[dest].add(src); //Gr runs only when graph is undirected
+        adj[dest].add(src); //this runs only when graph is undirected
     }
 
     public int dfs(int src , boolean[] vis){
