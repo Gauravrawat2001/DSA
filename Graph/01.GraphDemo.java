@@ -7,10 +7,12 @@ import java.util.Scanner;
 class Graph{
     int n; //  number of vertices
     ArrayList<Integer>[] adj;
-    
+
+
+    @SuppressWarnings("all")
     Graph(int n){
         this.n = n;
-        // adj = new ArrayList[n];
+         adj = new ArrayList[n];
         for(int i = 0; i < n; i++){
             adj[i] = new ArrayList<>();
         }
