@@ -1,4 +1,4 @@
- import java.io.*;
+//  import java.io.*;
 import java.util.*;
  import java.util.Comparator;
 
@@ -6,7 +6,7 @@ class Cricketer implements Comparable<Cricketer> {
     String name;
     Integer runs;
     Integer age;
-}
+
 
     public Cricketer(String name, Integer runs, Integer age) {
         this.name = name;
@@ -52,7 +52,9 @@ class CricketerNameComparator implements Comparator<Cricketer> {
     }
 }
 
+
 class PriorityQueue<T> {
+    @SuppressWarnings("all")
     ArrayList<T> data = new ArrayList<>();
     Comparator comparator;
 
