@@ -3,7 +3,7 @@ package LeetCodeDailyChallenge;
 import java.util.ArrayList;
 import java.util.List;
 
-// 17th april , time -> (N) , space -> O(1)
+// 17th april 2023 , time -> (N) , space -> O(1)
 
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
