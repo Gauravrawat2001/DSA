@@ -4,7 +4,6 @@
 
 import java.util.*;
 import java.io.*;
-import java.lang.*;
 
 class MinHeapNode
 {
@@ -131,7 +130,7 @@ class Driver_class
 class Decode
 {
     //Function to return the decoded string.
-    static String decodeHuffmanData(MinHeapNode node, String binaryString)
+    String decodeHuffmanData(MinHeapNode node, String binaryString)
     {
         
         // add your code here

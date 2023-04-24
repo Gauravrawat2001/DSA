@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Queue;
 
-// GFG
+// GFG , time -> O(N + E), Space -> O(E) queue and O(E + V) space as bfs
 // when you visited while popping , in this we will visit all the edges
 class Solution1 {
     // Function to return Breadth First Traversal of given graph.
