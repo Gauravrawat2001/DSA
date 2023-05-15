@@ -52,9 +52,9 @@ class CricketerNameComparator implements Comparator<Cricketer> {
     }
 }
 
-
+@SuppressWarnings("all")
 class PriorityQueue<T> {
-    @SuppressWarnings("all")
+    
     ArrayList<T> data = new ArrayList<>();
     Comparator comparator;
 
@@ -77,6 +77,11 @@ class PriorityQueue<T> {
         upheapify(data.size() - 1);
     }
 
+    /**
+     * @param i1
+     * @param i2
+     * @return
+     */
     boolean swap(int i1, int i2) {
         T p2 = data.get(i2);
         T p1 = data.get(i1);
