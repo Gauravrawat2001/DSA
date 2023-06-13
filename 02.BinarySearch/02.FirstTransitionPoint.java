@@ -1,4 +1,4 @@
-// GFG
+// GFG , time - O(logN)
 
 class GfG {
     int transitionPoint(int arr[], int n) {
