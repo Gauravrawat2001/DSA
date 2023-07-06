@@ -4,6 +4,7 @@
       boolean isBadVersion(int version); */
        
        class Solution extends VersionControl {
+       
          int firstBadVersion(int n) {
             int left = 0, right = n;
     
