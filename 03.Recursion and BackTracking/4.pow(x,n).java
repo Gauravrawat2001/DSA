@@ -10,7 +10,9 @@ class Solution {
 
     }
       
-    // Approach 2 -> optimized , time - O(logN), Space - log(n) , LC - 50
+    // Approach 2 -> optimized , time - O(logN), Space - log(n) , LC - 50 // better search exists using binary number exponentian 
+    //using iteration and bit manupulation.
+
 public double pow2(double x , long n){
     if(n == 0) return 1.0; // base case
     
