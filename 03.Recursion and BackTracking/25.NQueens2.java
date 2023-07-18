@@ -1,15 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
-
 // LC , Time - calls = N , depth = N => calls^(depth) => N^N => exponentioal , Space = O(N);
-
 class Solution {
-    List<List<String>> ways;
+    int count = 0;
 
     public void nQueens(boolean[][] chess , int row , int n){
         // Base case 
         if(row == n){
-            addOutput(chess , n);
+            count++;
             return;
         }
 
@@ -23,25 +19,7 @@ class Solution {
         }
     }
 
-    public void addOutput(boolean[][] chess , int n){
-        List<String> output = new ArrayList<>();
-
-        for(int row = 0; row < n ; row++){
-            String str = "";
-            for(int col = 0 ; col < n; col++){
-                if(chess[row][col] == true){
-                    str += 'Q';
-                }else{
-                    str += '.';
-                }
-            }
-            output.add(str);
-        }
-
-        ways.add(output);
-    }
-
-    public boolean isQueenSafe(boolean[][] chess , int row , int col , int n){
+     public boolean isQueenSafe(boolean[][] chess , int row , int col , int n){
        // for top 
        for(int r = row ; r >= 0; r--){
            if(chess[r][col] == true){
@@ -65,10 +43,10 @@ class Solution {
 
        return true;
     }
-    public List<List<String>> solveNQueens(int n) {
-        ways = new ArrayList<>();
+
+    public int totalNQueens(int n) {
         boolean[][] chess = new boolean[n][n];
         nQueens(chess , 0 , n);
-        return ways;
+        return count;
     }
 }
