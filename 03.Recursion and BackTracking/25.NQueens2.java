@@ -19,7 +19,7 @@ class Solution {
         }
     }
 
-     public boolean isQueenSafe(boolean[][] chess , int row , int col , int n){
+     public boolean isQueenSafe(boolean[][] chess ,int row ,int col , int n){
        // for top 
        for(int r = row ; r >= 0; r--){
            if(chess[r][col] == true){
