@@ -36,7 +36,7 @@ class Solution {
                 }
             }
 
-            return ;
+            return;
         }
 
         // if cell is alredy filled
